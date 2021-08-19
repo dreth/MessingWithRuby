@@ -53,3 +53,10 @@ puts integer + float # summing integer and float returns float
 puts 5 / 6
 # if an integer and a float are operated, a float is returned
 puts 5/6.0
+
+# comments
+
+=begin
+multiline comments
+yay \o/
+=end
