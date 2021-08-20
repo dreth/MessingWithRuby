@@ -57,3 +57,18 @@ mach2 = Machine.new('blue','EE85',770)
 puts("printing mach2 object and attrs")
 puts(mach1.inspect)
 puts(mach1.overloads())
+
+# inheritance
+class Machine2 < Machine
+    attr_accessor :version
+    def is_model_2
+        if version == 2
+            return true
+        end
+        return false
+    end
+end
+
+mach3 = Machine2.new('blue','EE85',770)
+mach3.version = 1
+puts(mach3.is_model_2())
