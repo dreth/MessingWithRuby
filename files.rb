@@ -23,3 +23,9 @@ File.foreach("sample.csv").with_index do |line, line_num|
  end
 
 # writing files
+File.open("sample.csv","a") do |file| # if the file doesnt exist it will create it
+    puts("\nwriting to file")
+    file.write("\n11,Keslie,Judkin,kjudkin9@163.com,Female,138.5.248.15311")
+    puts(file.read())
+end
+
