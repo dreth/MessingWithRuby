@@ -1,1 +1,14 @@
-Header test </br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <%= link_to 'Friend list app', root_path, class:"navbar-brand" %>
+
+  <div class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to 'About Us', home_about_path, class:"nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Friends', friends_path, class:"nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>
