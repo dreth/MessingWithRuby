@@ -11,32 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field form-group">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name, class:"form-control", placeholder:"First name" %>
-  </div>
+<div class="card">
+  <div class="card-body">
+    <div class="field form-group">
+      <%= form.text_field :first_name, class:"form-control", placeholder:"First name" %>
+    </div>
 
-  <div class="field form-group">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, class:"form-control", placeholder:"Last name" %>
-  </div>
+    <div class="field form-group">
+      <%= form.text_field :last_name, class:"form-control", placeholder:"Last name" %>
+    </div>
 
-  <div class="field form-group">
-    <%= form.label :email %>
-    <%= form.text_field :email, class:"form-control", placeholder:"Email" %>
-  </div>
+    <div class="field form-group">
+      <%= form.text_field :email, class:"form-control", placeholder:"Email" %>
+    </div>
 
-  <div class="field form-group">
-    <%= form.label :phone %>
-    <%= form.text_field :phone, class:"form-control", placeholder:"Phone number" %>
-  </div>
+    <div class="field form-group">
+      <%= form.text_field :phone, class:"form-control", placeholder:"Phone number" %>
+    </div>
 
-  <div class="field form-group">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter" %>
+    <div class="field form-group">
+      <%= form.text_field :twitter, class:"form-control", placeholder:"Twitter" %>
+    </div>
+
+    <div class="field form-group">
+      <%= form.number_field :user_id, id: :friend_user_id,  class:"form-control", value:current_user.id, type: :hidden %>
+    </div>
+
+    <br/>
+    <div class="actions">
+      <%= form.submit class:"btn btn-secondary" %>
+    </div>
   </div>
-  <br/>
-  <div class="actions">
-    <%= form.submit class:"btn btn-secondary" %>
-  </div>
+</div>
+
 <% end %>
